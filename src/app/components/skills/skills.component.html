@@ -1,0 +1,57 @@
+<!-- Skills Section -->
+<section id="skills" class="skills-section section" #skillsSection>
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <h2 class="section-title">Skills & Experience</h2>
+      <p class="section-subtitle">What I bring to the table</p>
+    </div>
+    
+    <!-- Skills Filter Tabs -->
+    <div class="skills-filter animate-on-scroll">
+      <div class="filter-tabs">
+        <button 
+          *ngFor="let category of skillCategories" 
+          class="filter-tab"
+          [class.active]="selectedCategory === category"
+          (click)="filterSkillsByCategory(category)">
+          {{ category }}
+        </button>
+      </div>
+    </div>
+
+    <div class="skills-content">
+      <!-- Skills Grid -->
+      <div class="skills-grid animate-on-scroll">
+        <div class="skill-card" *ngFor="let skill of filteredSkills">
+          <div class="skill-icon">
+            <i [class]="skill.icon"></i>
+          </div>
+          <div class="skill-info">
+            <h4 class="skill-name">{{ skill.name }}</h4>
+            <div class="skill-level">
+              <div class="skill-bar-container">
+                <div class="skill-bar" [style.width.%]="skill.level" [attr.data-level]="skill.level"></div>
+              </div>
+              <span class="skill-percentage">{{ skill.level }}%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Timeline -->
+      <div class="experience-timeline animate-on-scroll">
+        <h3>Experience</h3>
+        <div class="timeline">
+          <div class="timeline-item" *ngFor="let exp of experience">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">{{ exp.title }}</h4>
+              <p class="timeline-company">{{ exp.company }} • {{ exp.period }}</p>
+              <p class="timeline-description">{{ exp.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

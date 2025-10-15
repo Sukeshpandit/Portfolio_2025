@@ -1,0 +1,27 @@
+<!-- Navigation Bar -->
+<nav class="navbar" #navbar>
+  <div class="nav-container">
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="#home" class="nav-link" (click)="scrollToSection('home')">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#about" class="nav-link" (click)="scrollToSection('about')">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="#projects" class="nav-link" (click)="scrollToSection('projects')">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a href="#skills" class="nav-link" (click)="scrollToSection('skills')">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a href="#contact" class="nav-link" (click)="scrollToSection('contact')">Contact</a>
+      </li>
+    </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </div>
+</nav>
