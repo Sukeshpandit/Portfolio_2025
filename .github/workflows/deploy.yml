@@ -25,10 +25,10 @@ jobs:
         run: npm install -g @angular/cli
 
       - name: Build Angular app
-        run: ng build --output-path dist --base-href "https://sukeshpandit.github.io/Portfolio_2025/"
+        run: ng build --base-href "https://sukeshpandit.github.io/Portfolio_2025/"
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist
+          folder: dist/sukesh_Angular_portfolio
