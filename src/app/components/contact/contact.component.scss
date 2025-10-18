@@ -16,7 +16,7 @@
       font-size: 2.5rem;
       font-weight: 700;
       margin-bottom: 1rem;
-      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      background: linear-gradient(135deg, var(--color-blue), var(--color-purple));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -24,7 +24,7 @@
 
     .section-subtitle {
       font-size: 1.2rem;
-      color: #6b7280;
+      color: var(--color-grey-blue);
     }
   }
 
@@ -42,7 +42,7 @@
         .contact-icon {
           width: 60px;
           height: 60px;
-          background: linear-gradient(135deg, #6366f1, #8b5cf6);
+          background: linear-gradient(135deg, var(--color-blue), var(--color-purple));
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -50,7 +50,7 @@
           margin-right: 1rem;
 
           i {
-            color: white;
+            color: var(--color-white);
             font-size: 1.2rem;
           }
         }
@@ -60,11 +60,11 @@
             font-size: 1.1rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
-            color: #1f2937;
+            color: var(--color-grey-blue);
           }
 
           p {
-            color: #6b7280;
+            color: var(--color-grey-blue);
           }
         }
       }
@@ -77,18 +77,18 @@
         .social-link {
           width: 50px;
           height: 50px;
-          background: #f9fafb;
+          background: var(--color-off-white);
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
-          color: #6b7280;
+          color: var(--color-grey-blue);
           text-decoration: none;
           transition: all 0.3s ease;
 
           &:hover {
-            background: linear-gradient(135deg, #6366f1, #8b5cf6);
-            color: white;
+            background: linear-gradient(135deg, var(--color-blue), var(--color-purple));
+            color: var(--color-white);
             transform: translateY(-3px);
           }
         }
@@ -103,16 +103,16 @@
           .form-input {
             width: 100%;
             padding: 1rem;
-            border: 2px solid #e5e7eb;
+            border: 2px solid var(--color-dark-white);
             border-radius: 10px;
             font-size: 1rem;
             transition: all 0.3s ease;
-            background: white;
+            background: var(--color-white);
 
             &:focus {
               outline: none;
-              border-color: #6366f1;
-              box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+              border-color: var(--color-blue);
+              box-shadow: 0 0 0 3px var(--color-off-white-semi);
             }
 
             &.form-textarea {
@@ -145,8 +145,8 @@
   font-size: 1rem;
 
   &.btn-primary {
-    background: linear-gradient(135deg, #6366f1, #8b5cf6);
-    color: white;
+    background: linear-gradient(135deg, var(--color-blue), var(--color-purple));
+    color: var(--color-white);
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
 
     &:hover {

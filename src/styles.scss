@@ -4,7 +4,45 @@
 @import '@fortawesome/fontawesome-free/css/all.min.css';
 
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&display=swap');
+
+/* Color Palette Variables */
+:root {
+  --color-error: #e90000;
+  --color-off-white: #f0f1fa;
+  --color-white: #fff;
+  --color-dark-white: #e4e6ef;
+  --color-off-white-semi: rgba(240, 241, 250, .7);
+  --color-black: #000000;
+  --color-green: #c1ff00;
+  --color-blue: #1a2ffb;
+  --color-red: #ff4c41;
+  --color-grey-blue: #2b2e3a;
+  --color-dark-blue: #071bdf;
+  --color-purple: #8832f7;
+  --color-project-details-logo-color: #f0f;
+  --grid-space: calc((100% - 11 * var(--grid-gap)) / 12);
+  --grid-gap: 2vw;
+  --global-border-radius: 20px;
+  --base-padding-x: max(5vw, 40px);
+  --base-padding-y: clamp(30px, 4vw, 50px);
+  --header-color: #0016ec;
+  --header-text-color: #000000;
+  --project-details-bg: #000;
+  --project-details-highlight: #000;
+  --project-details-btn-bg: #000;
+  --project-details-btn-text: #000;
+  --project-details-icon-bg: #000;
+  --project-details-icon-color: #000;
+  --project-details-text: #000;
+  --project-details-btn-bg-hover: #000;
+  --project-details-btn-text-hover: #fff;
+  --header-size: clamp(1rem, 1vw, 2rem);
+  --cross-size: clamp(.875rem, 1vw, 2rem);
+  --font-family: 'Roboto', 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-family-bartleby: 'BBH Sans Bartle', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
 
 /* Global Styles */
 * {
@@ -18,10 +56,10 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: var(--font-family);
   line-height: 1.6;
-  color: #1f2937;
-  background-color: #ffffff;
+  color: var(--color-grey-blue);
+  background-color: var(--color-white);
   overflow-x: hidden;
 }
 
@@ -31,14 +69,14 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: var(--color-off-white);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  background: linear-gradient(135deg, var(--color-blue), var(--color-purple));
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  background: linear-gradient(135deg, var(--color-dark-blue), var(--color-purple));
 }

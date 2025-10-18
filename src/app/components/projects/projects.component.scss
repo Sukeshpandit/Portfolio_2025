@@ -16,7 +16,7 @@
       font-size: 2.5rem;
       font-weight: 700;
       margin-bottom: 1rem;
-      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      background: linear-gradient(135deg, var(--color-blue), var(--color-purple));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -24,7 +24,7 @@
 
     .section-subtitle {
       font-size: 1.2rem;
-      color: #6b7280;
+      color: var(--color-grey-blue);
     }
   }
 
@@ -34,7 +34,7 @@
     gap: 2rem;
 
     .project-card {
-      background: white;
+      background: var(--color-white);
       border-radius: 20px;
       overflow: hidden;
       box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
@@ -78,7 +78,7 @@
             .project-link {
               width: 50px;
               height: 50px;
-              background: linear-gradient(135deg, #6366f1, #8b5cf6);
+              background: linear-gradient(135deg, var(--color-blue), var(--color-purple));
               border-radius: 50%;
               display: flex;
               align-items: center;
@@ -112,11 +112,11 @@
           font-size: 1.3rem;
           font-weight: 600;
           margin-bottom: 0.5rem;
-          color: #1f2937;
+          color: var(--color-grey-blue);
         }
 
         .project-description {
-          color: #6b7280;
+          color: var(--color-grey-blue);
           margin-bottom: 1rem;
           line-height: 1.6;
         }
@@ -127,8 +127,8 @@
           gap: 0.5rem;
 
           .tech-tag {
-            background: #f9fafb;
-            color: #1f2937;
+            background: var(--color-off-white);
+            color: var(--color-grey-blue);
             padding: 0.3rem 0.8rem;
             border-radius: 20px;
             font-size: 0.8rem;
