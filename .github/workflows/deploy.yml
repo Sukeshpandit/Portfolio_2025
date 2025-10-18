@@ -32,4 +32,3 @@ jobs:
         with:
           branch: gh-pages
           folder: dist/sukesh_Angular_portfolio
-
