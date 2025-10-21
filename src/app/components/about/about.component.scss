@@ -1,26 +1,20 @@
 // About Section
 .about-section {
-  background: var(--color-off-white);
-  padding: 5rem 0;
-
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 4rem 2rem;
   }
 
   .section-header {
-    text-align: center;
-    margin-bottom: 4rem;
-
     .section-title {
       font-size: 2.5rem;
       font-weight: 700;
-      margin-bottom: 1rem;
-      background: linear-gradient(135deg, var(--color-blue), var(--color-purple));
+      background: var(--color-blue);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
+      font-family: var(--font-family-bartleby);
     }
 
     .section-subtitle {

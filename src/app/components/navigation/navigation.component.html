@@ -1,6 +1,9 @@
 <!-- Navigation Bar -->
 <nav class="navbar" #navbar>
   <div class="nav-container">
+    <div class="nav-logo">
+      <a href="#home" class="logo-text" (click)="scrollToSection('home')"></a>
+    </div>
     <ul class="nav-menu">
       <li class="nav-item">
         <a href="#home" class="nav-link" (click)="scrollToSection('home')">Home</a>
@@ -18,7 +21,7 @@
         <a href="#contact" class="nav-link" (click)="scrollToSection('contact')">Contact</a>
       </li>
     </ul>
-    <div class="hamburger">
+    <div class="hamburger" >
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
