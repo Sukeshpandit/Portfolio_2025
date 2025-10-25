@@ -132,7 +132,8 @@
 @media (max-width: 768px) {
   .navbar {
     .nav-container {
-      height: 70px;
+      // height: 70px;
+      display: none !important;
     }
     
     .nav-menu {
