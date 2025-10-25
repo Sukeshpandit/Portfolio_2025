@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:gh": "ng build --configuration production --base-href https://sukeshpandit.github.io/Portfolio_2025/",
+    "deploy": "npm run build:gh && npx angular-cli-ghpages --dir=dist/sukesh_Angular_portfolio/browser",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
