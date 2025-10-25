@@ -14,6 +14,7 @@ export class HeroComponent implements OnInit, AfterViewInit {
   @ViewChild('heroTitle', { static: false }) heroTitleElement!: ElementRef;
 
   heroTitle = ["SUKESH", "Front-end DEVELOPER"];
+  titleClasses = ["title-large", "title-medium"];
   
   currentTitleIndex = 0;
   isTitleTyping = false;
@@ -106,6 +107,7 @@ export class HeroComponent implements OnInit, AfterViewInit {
     
     this.isTitleTyping = true;
     const currentTitle = this.heroTitle[this.currentTitleIndex];
+    const currentClass = this.titleClasses[this.currentTitleIndex];
     let titleElement = this.heroTitleElement?.nativeElement;
     
     // Fallback to querySelector if ViewChild fails
@@ -119,8 +121,9 @@ export class HeroComponent implements OnInit, AfterViewInit {
       return;
     }
 
-    // Clear the text
+    // Clear the text and apply appropriate class
     titleElement.textContent = '';
+    titleElement.className = `typewriter-text ${currentClass}`;
     
     // Add cursor
     const cursor = document.createElement('span');
@@ -162,6 +165,7 @@ export class HeroComponent implements OnInit, AfterViewInit {
     }
 
     const currentTitle = this.heroTitle[this.currentTitleIndex];
+    const currentClass = this.titleClasses[this.currentTitleIndex];
     let i = currentTitle.length;
     
     const eraseInterval = setInterval(() => {
@@ -171,6 +175,7 @@ export class HeroComponent implements OnInit, AfterViewInit {
         cursor.textContent = '|';
         
         titleElement.textContent = currentTitle.substring(0, i);
+        titleElement.className = `typewriter-text ${currentClass}`;
         titleElement.appendChild(cursor);
         i--;
       } else {

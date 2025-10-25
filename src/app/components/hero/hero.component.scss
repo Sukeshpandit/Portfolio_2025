@@ -56,6 +56,12 @@
           display: inline;
           position: relative;
           color: var(--header-color);
+          
+          // Default font size for desktop (same for both titles)
+          font-size: clamp(1rem, 8vw, 6rem);
+          font-weight: 900;
+          line-height: 0.9;
+          
           .typewriter-cursor {
             display: inline-block;
             font-weight: 400;
@@ -341,6 +347,23 @@
     .hero-text {
       max-width: 100%;
       order: 2;
+      
+      .hero-title-name {
+        .typewriter-text {
+          // Different font sizes for mobile only
+          &.title-large {
+            font-size: clamp(2rem, 10vw, 4rem) !important;
+            font-weight: 900;
+            line-height: 0.8;
+          }
+          
+          &.title-medium {
+            font-size: clamp(1.2rem, 6vw, 2.5rem) !important;
+            font-weight: 700;
+            line-height: 1.1;
+          }
+        }
+      }
     }
     
     .hero-image {
