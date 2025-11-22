@@ -21,6 +21,7 @@ export interface Experience {
   company: string;
   period: string;
   description: string;
+  type: string;
 }
 
 @Injectable({
@@ -97,23 +98,24 @@ export class PortfolioDataService {
   getExperience(): Experience[] {
     return [
       {
-        title: 'Associate Software Engineer',
-        company: 'BizViz Technologies { BDB.ai }',
-        period: '2023 - Present',
-        description: 'Leading frontend development for enterprise applications using Angular and modern web technologies.'
-      },
-      {
-        title: 'Web Development Intern',
-        company: 'Take It Smart (OPC) Pvt Ltd',
-        period: '2020 - 2022',
-        description: 'Built and optimized client- and server-side features using JavaScript (ES6+),Built responsive web applications and collaborated with design teams to create user-friendly interfaces.'
-      },
-      {
         title: 'Bachelor of Engineering ',
         company: 'Visvesvaraya Technological University',
         period: '2019 - 2023',
+        type: 'Education',
         description: 'Information Science and Engineering | CGPA: 7.82/10'
-      }
+      },{
+        title: 'Web Development Intern',
+        company: 'Take It Smart (OPC) Pvt Ltd',
+        period: '2020 - 2022',
+        type: 'Internship',
+        description: 'Built and optimized client- and server-side features using JavaScript (ES6+),Built responsive web applications and collaborated with design teams to create user-friendly interfaces.'
+      },{
+        title: 'Associate Software Engineer',
+        company: 'BizViz Technologies { BDB.ai }',
+        period: '2023 - Present',
+        type: 'Work',
+        description: 'Leading frontend development for enterprise applications using Angular and modern web technologies.'
+      },
     ];
   }
 }

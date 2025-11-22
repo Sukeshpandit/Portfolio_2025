@@ -3,51 +3,74 @@
   <div class="container">
     <div class="section-header animate-on-scroll">
       <h2 class="section-title">Skills & Experience</h2>
-      <p class="section-subtitle">What I bring to the table</p>
     </div>
     
-    <!-- Skills Filter Tabs -->
-    <div class="skills-filter animate-on-scroll">
-      <div class="filter-tabs">
+    <!-- Compact Skills Display -->
+    <div class="skills-wrapper">
+      <!-- Category Filter - Compact -->
+      <div class="category-filter animate-on-scroll">
         <button 
           *ngFor="let category of skillCategories" 
-          class="filter-tab"
-          [class.active]="selectedCategory === category"
+          class="btn btn-secondary "
+          [class.btn-primary]="selectedCategory === category"
           (click)="filterSkillsByCategory(category)">
           {{ category }}
         </button>
       </div>
-    </div>
 
-    <div class="skills-content">
-      <!-- Skills Grid -->
-      <div class="skills-grid animate-on-scroll">
-        <div class="skill-card" *ngFor="let skill of filteredSkills">
+      <!-- Compact Skills List -->
+      <div class="skills-list animate-on-scroll">
+        <div 
+          class="skill-item" 
+          *ngFor="let skill of filteredSkills; let i = index"
+          [attr.data-level]="skill.level">
           <div class="skill-icon">
             <i [class]="skill.icon"></i>
           </div>
-          <div class="skill-info">
-            <h4 class="skill-name">{{ skill.name }}</h4>
-            <div class="skill-level">
+          <div class="skill-details">
+            <span class="skill-name">{{ skill.name }}</span>
+            <div class="skill-progress-wrapper">
               <div class="skill-bar-container">
-                <div class="skill-bar" [style.width.%]="skill.level" [attr.data-level]="skill.level"></div>
+                <div 
+                  class="skill-bar" 
+                  [style.width.%]="skill.level" 
+                  [attr.data-level]="skill.level"
+                  [style.background]="getProgressColor(skill.level)">
+                </div>
               </div>
-              <span class="skill-percentage">{{ skill.level }}%</span>
+              <span class="skill-level">{{ skill.level }}%</span>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Experience Timeline -->
-      <div class="experience-timeline animate-on-scroll">
-        <h3>Experience</h3>
-        <div class="timeline">
-          <div class="timeline-item" *ngFor="let exp of experience">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h4 class="timeline-title">{{ exp.title }}</h4>
-              <p class="timeline-company">{{ exp.company }} • {{ exp.period }}</p>
-              <p class="timeline-description">{{ exp.description }}</p>
+    <!-- Experience Timeline - Alternating Cards Design -->
+    <div class="experience-section animate-on-scroll">
+      <h3 class="experience-title">
+        <i class="fas fa-briefcase"></i>
+        Professional Experience
+      </h3>
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        <div class="timeline-items">
+          <div 
+            class="timeline-item" 
+            *ngFor="let exp of experience; let i = index; let isLast = last"
+            [class.left]="i % 2 === 0"
+            [class.right]="i % 2 === 1"
+            [class.is-last]="isLast">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="card-header">
+                <span class="card-date">{{ exp.period }}</span>
+                <span class="card-tag" [attr.data-type]="exp.type">{{ exp.type }}</span>
+              </div>
+              <h4 class="card-title">{{ exp.title }}</h4>
+              <p class="card-company">{{ exp.company }}</p>
+              <p class="card-description">{{ exp.description }}</p>
             </div>
           </div>
         </div>
