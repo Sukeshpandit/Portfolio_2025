@@ -22,7 +22,6 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.projects = this.portfolioDataService.getProjects();
-    console.log(this.projects);
   }
 
   ngAfterViewInit() {

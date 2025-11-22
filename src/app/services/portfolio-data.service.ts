@@ -31,26 +31,26 @@ export class PortfolioDataService {
   getProjects(): Project[] {
     return [
       {
-        title: 'E-Commerce Platform',
-        description: 'Full-stack e-commerce solution with Angular, Node.js, and MongoDB',
-        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop',
-        technologies: ['Angular', 'Node.js', 'MongoDB', 'Stripe'],
+        title: 'Beauty Parlor Management System',
+        description: 'Full-stack beauty parlor management system with Python, Flask, MySQL, HTML, and CSS with Bootstrap',
+        image: '/BPMS/BPMS_2.png',
+        technologies: ['Python', 'Flask', 'MySQL', 'HTML', 'CSS', 'Bootstrap'],
         link: '#',
-        github: '#'
+        github: 'https://github.com/Sukeshpandit/BeautyParlor-Management-system-?tab=readme-ov-file'
       },
       {
-        title: 'Task Management App',
-        description: 'Collaborative task management application with real-time updates',
-        image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop',
-        technologies: ['React', 'Socket.io', 'Express', 'PostgreSQL'],
+        title: 'Social Media App',
+        description: 'Social media application with Angular, Firebase, and Tailwind CSS',
+        image: '/social-media/image.png',
+        technologies: ['Angular', 'Firebase', 'Tailwind CSS'],
         link: '#',
         github: '#'
       },
       {
         title: 'Weather Dashboard',
         description: 'Real-time weather tracking with interactive maps and forecasts',
-        image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop',
-        technologies: ['Vue.js', 'Chart.js', 'OpenWeather API'],
+        image: '/Weather/image.png',
+        technologies: ['Angular', 'Chart.js', 'OpenWeather API'],
         link: '#',
         github: '#'
       }
