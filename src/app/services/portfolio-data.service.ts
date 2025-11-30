@@ -110,11 +110,11 @@ export class PortfolioDataService {
         type: 'Internship',
         description: 'Built and optimized client- and server-side features using JavaScript (ES6+),Built responsive web applications and collaborated with design teams to create user-friendly interfaces.'
       },{
-        title: 'Associate Software Engineer',
+        title: 'Software Engineer',
         company: 'BizViz Technologies { BDB.ai }',
         period: '2023 - Present',
         type: 'Work',
-        description: 'Leading frontend development for enterprise applications using Angular and modern web technologies.'
+        description: 'Leading frontend development for enterprise applications using Angular , React and modern web technologies.'
       },
     ];
   }
