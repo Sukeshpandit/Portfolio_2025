@@ -157,9 +157,256 @@
 }
 
 // Responsive Design
+@media (max-width: 1024px) {
+  .contact-section {
+    .container {
+      padding: 0 1.5rem;
+    }
+
+    .contact-content {
+      gap: 3rem;
+
+      .contact-info {
+        display: none;
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
-  .contact-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  .contact-section {
+    padding: 3rem 0;
+
+    .container {
+      padding: 0 1rem;
+    }
+
+    .section-header {
+      margin-bottom: 3rem;
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .section-subtitle {
+        font-size: 1rem;
+      }
+    }
+
+    .contact-content {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+
+      .contact-info {
+        display: none;
+
+        .contact-item {
+          margin-bottom: 1.5rem;
+
+          .contact-icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 0.75rem;
+
+            i {
+              font-size: 1rem;
+            }
+          }
+
+          .contact-details {
+            h4 {
+              font-size: 1rem;
+            }
+
+            p {
+              font-size: 0.9rem;
+            }
+          }
+        }
+
+        .social-links {
+          gap: 0.75rem;
+          margin-top: 1.5rem;
+
+          .social-link {
+            width: 45px;
+            height: 45px;
+          }
+        }
+      }
+
+      .contact-form {
+        .form {
+          .form-group {
+            margin-bottom: 1.25rem;
+
+            .form-input {
+              padding: 0.875rem;
+              font-size: 0.95rem;
+            }
+          }
+
+          .form-submit {
+            padding: 0.875rem;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 2.5rem 0;
+
+    .container {
+      padding: 0 1rem;
+    }
+
+    .section-header {
+      margin-bottom: 2rem;
+
+      .section-title {
+        font-size: 1.75rem;
+      }
+
+      .section-subtitle {
+        font-size: 0.95rem;
+      }
+    }
+
+    .contact-content {
+      gap: 2rem;
+
+      .contact-info {
+        display: none;
+
+        .contact-item {
+          flex-direction: column;
+          align-items: flex-start;
+          margin-bottom: 1.5rem;
+
+          .contact-icon {
+            width: 45px;
+            height: 45px;
+            margin-right: 0;
+            margin-bottom: 0.75rem;
+          }
+
+          .contact-details {
+            h4 {
+              font-size: 0.95rem;
+              margin-bottom: 0.25rem;
+            }
+
+            p {
+              font-size: 0.85rem;
+            }
+          }
+        }
+
+        .social-links {
+          justify-content: center;
+          gap: 0.75rem;
+          margin-top: 1.5rem;
+
+          .social-link {
+            width: 40px;
+            height: 40px;
+
+            i {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+
+      .contact-form {
+        .form {
+          .form-group {
+            margin-bottom: 1rem;
+
+            .form-input {
+              padding: 0.75rem;
+              font-size: 0.9rem;
+
+              &.form-textarea {
+                min-height: 100px;
+              }
+            }
+          }
+
+          .form-submit {
+            padding: 0.75rem;
+            font-size: 0.95rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-section {
+    padding: 2rem 0;
+
+    .section-header {
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .section-subtitle {
+        font-size: 0.9rem;
+      }
+    }
+
+    .contact-content {
+      .contact-info {
+        display: none;
+
+        .contact-item {
+          .contact-icon {
+            width: 40px;
+            height: 40px;
+
+            i {
+              font-size: 0.9rem;
+            }
+          }
+
+          .contact-details {
+            h4 {
+              font-size: 0.9rem;
+            }
+
+            p {
+              font-size: 0.8rem;
+            }
+          }
+        }
+
+        .social-links {
+          .social-link {
+            width: 38px;
+            height: 38px;
+          }
+        }
+      }
+
+      .contact-form {
+        .form {
+          .form-input {
+            padding: 0.7rem;
+            font-size: 0.85rem;
+          }
+
+          .form-submit {
+            padding: 0.7rem;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
   }
 }
