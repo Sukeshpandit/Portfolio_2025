@@ -34,7 +34,7 @@ export class PortfolioDataService {
       {
         title: 'Beauty Parlor Management System',
         description: 'Full-stack beauty parlor management system with Python, Flask, MySQL, HTML, and CSS with Bootstrap',
-        image: '/BPMS/BPMS_2.png',
+        image: 'BPMS/BPMS_2.png',
         technologies: ['Python', 'Flask', 'MySQL', 'HTML', 'CSS', 'Bootstrap'],
         link: '#',
         github: 'https://github.com/Sukeshpandit/BeautyParlor-Management-system-?tab=readme-ov-file'
@@ -42,7 +42,7 @@ export class PortfolioDataService {
       {
         title: 'Social Media App',
         description: 'Social media application with Angular, Firebase, and Tailwind CSS',
-        image: '/social-media/image.png',
+        image: 'social-media/image.png',
         technologies: ['Angular', 'Firebase', 'Tailwind CSS'],
         link: '#',
         github: '#'
@@ -50,7 +50,7 @@ export class PortfolioDataService {
       {
         title: 'Weather Dashboard',
         description: 'Real-time weather tracking with interactive maps and forecasts',
-        image: '/Weather/image.png',
+        image: 'Weather/image.png',
         technologies: ['Angular', 'Chart.js', 'OpenWeather API'],
         link: '#',
         github: '#'
